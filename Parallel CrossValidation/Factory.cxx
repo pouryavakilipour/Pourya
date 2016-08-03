@@ -2912,14 +2912,14 @@ float TMVA::Factory::CrossValidate(DataLoader * loader, Types::EMVA theMethod, T
 
 float TMVA::Factory::CrossValidate(DataLoader * loader, Types::EMVA theMethod, TString methodTitle, const char *theOption, bool optParams, int NumFolds, bool remakeDataSet, float * rocIntegrals, UInt_t nPro)
 {
-   TStopwatch w;
-   w.Start();
+   //TStopwatch w;
+   //w.Start();
    if(remakeDataSet){
       	    //loader->ValidationKFoldSet();
       	    loader->MakeKFoldDataSet(NumFolds);
    }
-   w.Print();
-   cout<<endl<<endl;
+   //w.Print();
+   //cout<<endl<<endl;
    //TStopwatch s;
    //s.Start();
    const int nbits = loader->DefaultDataSetInfo().GetNVariables();
